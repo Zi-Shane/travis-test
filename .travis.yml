@@ -1,6 +1,13 @@
 language: node_js
 node_js:
-  - "16"
+    - "16"
+deploy:
+    provider: heroku
+    api_key:
+        secure: e253051a-0439-4100-a212-4a302c163761
+    app: travis-test-0807
+    on:
+        repo: Zi-Shane/travis-test
 install:
     - npm install
 script:
